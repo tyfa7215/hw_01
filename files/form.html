@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Page Title</title>
+      </head>
+      <body>
+
+        <br>
+        <div class="container">
+          <h2>Add New Article</h2>
+          <form action="/action_page.php">
+
+            <div class="form-group">
+              <label for="text">Article Title:</label>
+              <input type="text" class="form-control" id="title" placeholder="Title" name="artTitle">
+            </div>
+
+            <div class="form-group">
+              <label for="text">Author Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Name" name="authName">
+            </div>
+
+            <div class="form-row">
+              <div class="col">
+                <label for="text">Upload Files:</label>
+                <div class="custom-file mb-3">
+                  <input type="file" class="custom-file-input" id="customFile" name="filename">
+                  <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+              </div>
+              <div class="col">
+                <label for="text">Select Page:</label>
+                <div class="dropdown">
+                  <button class="btn btn-secondary btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Academic</a>
+                    <a class="dropdown-item" href="#">Social</a>
+                    <a class="dropdown-item" href="#">Political</a>
+                  </div>
+              </div>
+            </div>
+            </div>
+
+            <div class="form-group">
+              <label for="artText">Article Text</label>
+              <textarea class="form-control" style="width:100%;" id="artText" rows="15" placeholder="Type article here"></textarea>
+            </div>
+
+            <br>
+
+            <div class="form-row">
+              <div class="col" id="tagSel">
+                <label for="tagSel">Select Tags:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">Python</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">C++</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Java</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                  <label class="form-check-label" for="inlineCheckbox4">Perl</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                  <label class="form-check-label" for="inlineCheckbox5">Scala</label>
+                </div>
+              </div>
+              <div class="col" id="pubPriv">
+                <label for="pubPriv">Visibility:</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Public</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Private</label>
+                </div>
+              </div>
+            </div>
+            <br>
+
+            <label for="unpw">Login to Finish Submitting:</label>
+            <div class="form-row" id="unpw">
+              <div class="col" span="1">
+                <input type="text" class="form-control" id="un" placeholder="Username" name="un">
+              </div>
+              <div class="col" span="1">
+                <input type="password" class="form-control" id="pw" placeholder="Password" name="pw">
+              </div>
+            </div>
+
+            <div class="checkbox">
+              <label><input type="checkbox" name="remember"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-info">Submit</button>
+
+          </form>
+          <br>
+        </div>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </body>
+    </html>

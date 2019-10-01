@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: https://github.com/tyfa7215/hw_01/tree/gh-pages
+source: [https://github.com/tyfa7215/hw_01.git]
 incremental: false
 highlighter: rouge
 gist:
